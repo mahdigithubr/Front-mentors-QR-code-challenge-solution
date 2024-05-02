@@ -1,0 +1,92 @@
+:root {
+  --whiteColor: hsl(0, 0%, 100%);
+  --lightGray: hsl(212, 45%, 89%);
+  --grayishBlue: hsl(220, 15%, 55%);
+  --darkBlue: hsl(218, 44%, 22%);
+  --aColor: hsl(218, 56%, 13%);
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400px;
+  background-color: var(--lightGray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-weight: 400px;
+  margin-bottom: 0px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  background-color: var(--whiteColor);
+  width: 320px;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.card img {
+  border-radius: 10px;
+}
+
+.card-body {
+  padding: 20px 15px;
+  text-align: center;
+}
+
+.card-body h4 {
+  font-size: 22px;
+  color: var(--darkBlue);
+}
+
+.card-body p {
+  font-size: 15px;
+  color: var(--grayishBlue);
+}
+
+.attribution {
+  margin-top: 15px;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--darkBlue);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.attribution a:hover {
+  color: var(--aColor);
+}
